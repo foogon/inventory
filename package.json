@@ -1,0 +1,23 @@
+{
+  "name": "inventory",
+  "version": "0.0.0",
+  "main": "build/main.js",
+  "repository": "git@github.com:foogon/inventory.git",
+  "author": "Jason Kuhrt <jasonkuhrt@me.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/main.js",
+    "dev": "nodemon source/main.js --exec babel-node",
+    "build": "babel source -d build"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "ramda": "^0.22.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-env": "0.0.9",
+    "nodemon": "^1.11.0"
+  }
+}
