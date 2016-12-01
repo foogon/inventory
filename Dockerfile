@@ -1,5 +1,8 @@
 from node:7-alpine
-copy . /source
-workdir source
-run npm install && npm run build
-cmd ["npm", "start"]
+workdir /source
+copy package.json .
+run npm install
+copy . .
+run npm run build
+entrypoint ["npm", "run"]
+cmd ["start"]
