@@ -6,9 +6,9 @@
   "author": "Jason Kuhrt <jasonkuhrt@me.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node build/main.js",
-    "dev": "nodemon source/main.js --exec babel-node",
-    "build": "babel source -d build"
+    "start": "nodemon source/main.js --exec babel-node",
+    "build": "babel source -d build",
+    "serve": "npm run build && node build/main.js"
   },
   "dependencies": {
     "express": "^4.14.0",
